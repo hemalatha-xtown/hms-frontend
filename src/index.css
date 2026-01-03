@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.custom-rate .ant-rate-star-zero .anticon {
+  color: #c5c5c5;            
+  -webkit-text-stroke: 1px #c7c7c7; 
+}
+
+.custom-rate .ant-rate-star .anticon {
+  -webkit-text-stroke: 1px #7a7a7a; 
+}
+/* Disable selection everywhere by default */
+* {
+  user-select: none;
+  cursor: default;
+}
+
+/* Re-enable selection for form fields */
+input,
+textarea,
+.ant-select-selection-search-input {
+  cursor: text !important;
+  user-select: text !important;
+}
+
+/* Re-enable selection for table text (optional) */
+.ant-table-cell {
+  user-select: text;
+}
+
+.ant-table-thead > tr > th {
+  user-select: none !important;
+  cursor: default !important;
+}
+.ant-table-cell {
+  user-select: none;
+  cursor: default;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
